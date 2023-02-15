@@ -30,18 +30,18 @@ if (!gl) {
 // vertex data is the data that defines the shape of the object
 
 // prettier-ignore
-const vertexData = [
-    0.5, 0.5, 0.5, // top right 
-    0.5, -.5, 0.5, // bottom right
-    -.5, 0.5, 0.5, // top left
+const vertexData = repeat(1, [
+  0.5, 0.5, 0.5, // top right 
+  0.5, -.5, 0.5, // bottom right
+  -.5, 0.5, 0.5, // top left
 
-    -.5, 0.5, 0.5, // top left
-    0.5, -.5, 0.5, // bottom right
-    -.5, -.5, 0.5, // bottom left
-];
+  -.5, 0.5, 0.5, // top left
+  0.5, -.5, 0.5, // bottom right
+  -.5, -.5, 0.5, // bottom left
+])
 
 // prettier-ignore
-const uvData = repeat(6, [
+const uvData = repeat(1, [
     1, 1, // top right
     1, 0, // bottom right
     0, 1, // top left
